@@ -1,12 +1,6 @@
 /* General */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
+
 body {
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -25,16 +19,17 @@ img {
 }
 /* Navigation */
 .nav-top {
-  padding: 72px 168px 0;
+  
+  padding-top:72px;
+  text-align: center;
+  
 }
 .nav-list {
-  margin: 0;
-  padding: 0;
+  
   display: inline-block;
   vertical-align: middle;
   list-style: none;
-  font-size: 0;
-  width: 566px;
+    
 }
 .nav-list a {
   font-family: "Playfair Display";
@@ -106,6 +101,7 @@ img {
 .article-list-item {
   margin-bottom: 130px;
 }
+/* margin for last 2 items */
 .article-list-item:nth-last-child(-n + 2) {
   margin-bottom: 50px;
 }
@@ -120,18 +116,9 @@ img {
   display: block;
   background-color: #fff;
   padding: 18px 34px;
-  text-align: center;
+  /* text-align: center; */
   margin: 0 auto 70px;
   border:1px solid #626262;
 }
 
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
-}
+
