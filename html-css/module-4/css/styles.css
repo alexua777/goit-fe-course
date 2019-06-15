@@ -9,9 +9,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .wrapper {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
-  padding: 40px 0;
 }
 .clearfix::after {
   display: table;
@@ -22,8 +21,6 @@ body {
 .logo {
   text-decoration: none;
 
-  width: 190px;
-  height: 42px;
   font-size: 30px;
   letter-spacing: -1px;
   line-height: 32px;
@@ -34,6 +31,7 @@ body {
 }
 .page-header {
   margin-bottom: 112px;
+  margin-top: 42px;
 }
 .logo::first-letter {
   color: #1abc9c;
@@ -60,7 +58,7 @@ body {
   font-size: 14px;
   letter-spacing: 0px;
   line-height: 11px;
-  color: black;
+  color:#0f0101;
   font-family: "Open Sans";
   font-weight: 700;
   text-decoration: none;
@@ -69,10 +67,8 @@ body {
 h2 {
   font-size: 48px;
   letter-spacing: -1px;
-  /* line-height: 32px; */
   font-weight: 900;
   text-align: center;
-  /* outline: 2px solid red; */
 }
 h2::after {
   display: block;
@@ -88,8 +84,6 @@ h2::after {
 /* Product Block */
 .product-block {
   width: 255px;
-  height: 322px;
-
   float: left;
 }
 
@@ -114,65 +108,49 @@ img {
   text-align: center;
   width: 255px;
   height: 280px;
-  display: block;
-
-  /* padding: 50px 0; */
+  
 }
 
-.product-image img {
-  display: inline-block;
-  vertical-align: middle;
-}
+
 
 /* Product description  */
-.product-name {
+
+.product-info {
+  width: 255px;
+}
+
+.product-info h3 {
   width: 200px;
-  height: 42px;
   float: left;
   background-color: #323232;
-}
-.product-name h3 {
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0px;
   line-height: 42px;
   color: #ffffff;
   font-weight: 900;
   font-size: 18px;
-  text-align: center;
+  float: left;
 }
-/* Product Price  */
-.product-price {
+
+.product-info p {
   width: 55px;
-  height: 42px;
-  float: left;
-  background-color: rgba(50, 50, 50, 0.4);
-}
-
-.product-price p {
   font-size: 18px;
   letter-spacing: 0px;
   color: #ffffff;
   font-weight: 900;
   text-align: center;
   line-height: 42px;
-}
-
-.product-name p {
+  background-color: rgba(0, 0, 0, 0.4);
   float: left;
-  font-size: 18px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  font-weight: 900;
-  text-align: center;
-  line-height: 42px;
 }
 
 /* Hovering effect */
-.product-block:hover > .product-name {
+.product-block:hover .product-info h3 {
   background: #1abc9c;
 }
 
-.product-block:hover > .product-price {
+.product-block:hover .product-info p {
   background: rgba(26, 188, 156, 0.4);
 }
 
@@ -190,7 +168,7 @@ img {
 .blog-title {
   font-size: 18px;
   letter-spacing: 0px;
-  /* line-height: 26px; */
+  
   color: #555252;
   font-family: "Open Sans";
   font-weight: 600;
@@ -214,8 +192,7 @@ img {
   font-family: "Open Sans";
   font-weight: 400;
   margin-bottom: 18px;
-  font-size: 14px;
-
+ 
 }
 
 .blog-post:not(:nth-child(3n + 1)) {
