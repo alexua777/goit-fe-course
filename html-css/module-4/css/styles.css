@@ -210,7 +210,7 @@ img {
   background-color: #4ec6ab;
   color: white;
 }
-.blog-button a{
-  text-decoration: none;
-  color: white;
+.blog-button:hover{
+  cursor: pointer;
 }
+
