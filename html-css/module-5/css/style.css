@@ -257,7 +257,7 @@ main {
   padding: 12px;
   margin-bottom: 7px;
 }
-.box-icon:not(:last-child(3n + 1)) {
+.box-icon:not(:nth-child(3n + 1)) {
   margin-right: 10px;
 }
 .cart-button {
