@@ -130,6 +130,16 @@ main {
   width: 1110px;
   height: 600px;
   position: absolute;
+  
+}
+.bn-control a{
+  text-decoration: none;
+  font-size: 50px;
+  line-height: 100px;
+  color: #ffffff;
+  font-family: "Pe";
+  text-align: center;
+  display: block;
 }
 
 .button {
@@ -138,12 +148,7 @@ main {
   background-color: rgb(26, 188, 156);
   position: absolute;
   transform: translateY(-50%);
-  font-size: 50px;
-  line-height: 100px;
-  color: #ffffff;
-  font-family: "Pe";
-  text-align: center;
-  display: block;
+ 
 }
 
 .button:hover {
