@@ -310,9 +310,11 @@ main {
   font-weight: 400;
   text-align: center;
   padding-top: 38px;
+  text-transform: initial;
 }
 
 .footer a {
   text-decoration: none;
   color: rgb(26, 188, 156);
+ 
 }
