@@ -10,9 +10,15 @@ body {
 }
 
 .wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container{
   width: 1110px;
   margin: 0 auto;
 }
+
 /* Page Header  */
 .page-header {
   margin-top: 40px;
@@ -25,7 +31,7 @@ body {
   letter-spacing: -1px;
   line-height: 32px;
 
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 .logo a {
@@ -46,7 +52,7 @@ body {
   letter-spacing: 0px;
   line-height: 11px;
 
-  font-family: "Open Sans";
+  font-family: "Open Sans",sans-serif;
   font-weight: 700;
   line-height: 32px;
 }
@@ -75,10 +81,10 @@ img {
   width: 100%;
   display: block;
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 main {
-  /* width: 1600px; */
+  
   margin: 0 auto;
   background-color: #e9f0fd;
 }
@@ -107,7 +113,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
   text-align: left;
 }
 
@@ -129,7 +135,7 @@ main {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1110px;
+  
   height: 600px;
   position: absolute;
   
@@ -139,7 +145,7 @@ main {
   font-size: 50px;
   line-height: 100px;
   color: #ffffff;
-  font-family: "Pe";
+  font-family: "Pe",sans-serif;
   text-align: center;
   display: block;
 }
@@ -174,7 +180,7 @@ main {
   letter-spacing: -1px;
   line-height: 32px;
   color: #515151;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   text-align: center;
 }
@@ -212,7 +218,7 @@ main {
   letter-spacing: 0px;
   line-height: 40px;
   color: #ffffff;
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
   font-weight: 900;
 }
 .product-info h3 {
@@ -241,13 +247,19 @@ main {
 .overlay {
   display: none;
   width: 255px;
-  height: 284px;
+  
   border: 10px solid white;
   background-color: rgb(50, 50, 50, 0.7);
   position: absolute;
   top: 0;
   left: 0;
   padding-top: 80px;
+  padding-bottom: 70px;
+  
+}
+.cart-bn{
+  margin: 0 auto;
+  list-style: none;
 }
 .product-card:hover .overlay {
   display: block;
@@ -255,7 +267,10 @@ main {
 .overlay-icons {
   list-style: none;
   background: transparent;
+  margin: 0 auto;
+
 }
+
 .box-icon {
   width: 50px;
   height: 50px;
@@ -263,8 +278,10 @@ main {
   display: inline-block;
   padding: 12px;
   margin-bottom: 7px;
+  
+  
 }
-.box-icon:not(:nth-child(3n + 1)) {
+.box-icon:not(:last-child) {
   margin-right: 10px;
 }
 .cart-button {
@@ -276,7 +293,7 @@ main {
   letter-spacing: 0px;
   line-height: 50px;
   color: #ffffff;
-  font-family: "Open Sans";
+  font-family: "Open Sans",sans-serif;
   font-weight: 400;
   text-align: center;
 
@@ -308,16 +325,16 @@ main {
 /* Footer */
 
 .footer {
-  height: 88px;
+  
   background-color: #323232;
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 28px;
   color: #fefefe;
-  font-family: "Open Sans";
+  font-family: "Open Sans",sans-serif;
   font-weight: 400;
   text-align: center;
-  padding-top: 38px;
+  padding: 38px;
   text-transform: initial;
 }
 
