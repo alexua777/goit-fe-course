@@ -72,12 +72,13 @@ body {
   clear: both;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
+  object-fit: cover;
 }
 main {
-  width: 1600px;
+  /* width: 1600px; */
   margin: 0 auto;
   background-color: #e9f0fd;
 }
@@ -88,7 +89,7 @@ main {
 }
 
 .banner {
-  width: 1600px;
+  width: 100%;
   height: 600px;
   margin: 0 auto;
   position: relative;
