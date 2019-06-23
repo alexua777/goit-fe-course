@@ -281,8 +281,9 @@ main {
   margin: 0 auto;
 }
 
-.overlay-icons a {
+.cart-button a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .cart-button p::before {
