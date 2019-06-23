@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.container{
+.container {
   width: 1110px;
   margin: 0 auto;
 }
@@ -52,7 +52,7 @@ body {
   letter-spacing: 0px;
   line-height: 11px;
 
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 32px;
 }
@@ -84,7 +84,6 @@ img {
   /* object-fit: cover; */
 }
 main {
-  
   margin: 0 auto;
   background-color: #e9f0fd;
 }
@@ -101,8 +100,21 @@ main {
   position: relative;
   margin-bottom: 100px;
 }
-.banner:hover .banner-image {
+/* .banner:hover .banner-image {
   filter: brightness(0.5);
+} */
+
+.bn-slider {
+  position: relative;
+}
+.bn-slider::before {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .bn-title {
@@ -113,7 +125,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: left;
 }
 
@@ -132,20 +144,17 @@ main {
 /* Banner nav tools */
 
 .bn-control {
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  
-  height: 600px;
+  transform: translate(-50%, -50%);
   position: absolute;
-  
 }
-.bn-control a{
+.bn-control a {
   text-decoration: none;
   font-size: 50px;
   line-height: 100px;
   color: #ffffff;
-  font-family: "Pe",sans-serif;
+  font-family: "Pe", sans-serif;
   text-align: center;
   display: block;
 }
@@ -153,10 +162,10 @@ main {
 .button {
   width: 104px;
   height: 104px;
+  border: none;
   background-color: rgb(26, 188, 156);
   position: absolute;
   transform: translateY(-50%);
- 
 }
 
 .button:hover {
@@ -164,10 +173,16 @@ main {
 }
 
 .left-arrow {
+  background-image: url("../img/banner/left.png");
+  background-repeat: no-repeat;
+  background-position: center;
   left: 0;
   top: 50%;
 }
 .right-arrow {
+  background-image: url("../img/banner/right.png");
+  background-repeat: no-repeat;
+  background-position: center;
   right: 0;
   top: 50%;
 }
@@ -198,7 +213,7 @@ main {
 /* Product Card */
 .product-card {
   width: 255px;
-  height: 322px;
+
   float: left;
   margin-bottom: 100px;
 }
@@ -210,7 +225,6 @@ main {
   position: relative;
   object-fit: cover;
   width: 255px;
-  
 }
 .product-info {
   width: 255px;
@@ -218,7 +232,7 @@ main {
   letter-spacing: 0px;
   line-height: 40px;
   color: #ffffff;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
 .product-info h3 {
@@ -246,8 +260,10 @@ main {
 
 .overlay {
   display: none;
-  width: 255px;
-  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border: 10px solid white;
   background-color: rgb(50, 50, 50, 0.7);
   position: absolute;
@@ -255,9 +271,8 @@ main {
   left: 0;
   padding-top: 80px;
   padding-bottom: 70px;
-  
 }
-.cart-bn{
+.cart-bn {
   margin: 0 auto;
   list-style: none;
 }
@@ -268,22 +283,37 @@ main {
   list-style: none;
   background: transparent;
   margin: 0 auto;
-
 }
 
+.overlay-icons li {
+  display: inline-block;
+}
 .box-icon {
   width: 50px;
   height: 50px;
   border: 1px solid white;
-  display: inline-block;
+  cursor: pointer;
+
   padding: 12px;
   margin-bottom: 7px;
-  
-  
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.box-icon:not(:last-child) {
+.overlay-icons li:nth-child(-n+2) {
   margin-right: 10px;
 }
+
+.like {
+  background-image: url("../img/icons/like.png");
+}
+.arrows{
+  background-image: url("../img/icons/arrows.png");
+}
+.clock{
+  background-image: url("../img/icons/clock.png");
+}
+
 .cart-button {
   width: 166px;
   height: 50px;
@@ -293,11 +323,12 @@ main {
   letter-spacing: 0px;
   line-height: 50px;
   color: #ffffff;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-align: center;
-
   margin: 0 auto;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .cart-button a {
@@ -305,7 +336,7 @@ main {
   color: #ffffff;
 }
 
-.cart-button p::before {
+.cart-button::before {
   content: url(../img/icons/cart.png);
   display: inline-block;
   vertical-align: middle;
@@ -325,13 +356,12 @@ main {
 /* Footer */
 
 .footer {
-  
   background-color: #323232;
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 28px;
   color: #fefefe;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-align: center;
   padding: 38px;
@@ -341,5 +371,4 @@ main {
 .footer a {
   text-decoration: none;
   color: rgb(26, 188, 156);
- 
 }
