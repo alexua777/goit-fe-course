@@ -104,8 +104,7 @@ img {
 }
 /* Product Image */
 .product-image {
-  background-image: url("..//img/product-backgound.png");
-  text-align: center;
+  background-color: #e8effc;
   width: 255px;
   height: 280px;
   
@@ -117,13 +116,14 @@ img {
 
 .product-info {
   width: 255px;
+  background-color: #323232;
 }
 
 .product-info h3 {
   width: 200px;
-  float: left;
-  background-color: #323232;
-  text-align: center;
+ 
+  
+ 
   text-transform: uppercase;
   letter-spacing: 0px;
   line-height: 42px;
@@ -131,6 +131,8 @@ img {
   font-weight: 900;
   font-size: 18px;
   float: left;
+  width: 200px;
+  padding-left: 10px;
 }
 
 .product-info p {
@@ -141,7 +143,7 @@ img {
   font-weight: 900;
   text-align: center;
   line-height: 42px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   float: left;
 }
 
@@ -157,7 +159,7 @@ img {
 /* Blog Section */
 .blog-post {
   width: 350px;
-  height: 496px;
+
 
   float: left;
 }
@@ -210,7 +212,20 @@ img {
   background-color: #4ec6ab;
   color: white;
 }
-.blog-button:hover{
-  cursor: pointer;
-}
 
+.blog-btn{
+  display: block;
+  width: 160px;
+  height: 51px;
+  border-radius: 3px;
+  border: none;
+  background-color: #4ec6ab;
+  color: white;
+  line-height: 51px;
+  text-align: center;
+  
+}
+.blog-btn a{
+  text-decoration: none;
+  color: white;
+}
