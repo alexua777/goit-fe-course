@@ -214,6 +214,11 @@ main {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
+.product-info a{
+  text-decoration: none;
+  color: white;
+}
+
 .product-info h3 {
   float: left;
   width: 200px;
@@ -246,7 +251,6 @@ main {
 
   background-color: rgb(50, 50, 50, 0.7);
   position: absolute;
-  
 }
 .cart-bn {
   margin: 0 auto;
@@ -259,18 +263,17 @@ main {
   list-style: none;
   background: transparent;
   margin: auto;
-  width:166px;
+  width: 166px;
   position: relative;
-  bottom:0;
-  left:0;
-  right:0;
-  top:50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
   transform: translateY(-50%);
-  
 }
 
 .overlay-icons li {
-  float:left;
+  float: left;
 }
 .box-icon {
   width: 50px;
