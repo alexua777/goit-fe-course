@@ -29,6 +29,8 @@ img {
   display: inline-block;
   vertical-align: middle;
   list-style: none;
+  padding:0;
+  
     
 }
 .nav-list a {
@@ -37,7 +39,6 @@ img {
   color: #626262;
   text-align: center;
   text-transform: uppercase;
-  display: inline-block;
   text-decoration: none;
 }
 .nav-list li {
