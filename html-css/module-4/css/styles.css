@@ -11,6 +11,7 @@ body {
 .wrapper {
   width: 1110px;
   margin: 0 auto;
+  padding-top:40px;
 }
 .clearfix::after {
   display: table;
@@ -19,19 +20,23 @@ body {
 }
 /* Navigation */
 .logo {
-  text-decoration: none;
-
+    
   font-size: 30px;
   letter-spacing: -1px;
   line-height: 32px;
-  color: #515151;
   font-family: "Roboto";
   font-weight: 300;
   float: left;
 }
+
+nav a{
+  text-decoration: none;
+  color: #515151;
+}
+
 .page-header {
   margin-bottom: 112px;
-  margin-top: 42px;
+  
 }
 .logo::first-letter {
   color: #1abc9c;
@@ -41,7 +46,7 @@ body {
 .menu-list {
   list-style: none;
   float: right;
-  line-height: 32px;
+  line-height: 72px;
 }
 
 .menu-list li:not(:last-child) {
@@ -105,8 +110,7 @@ img {
 /* Product Image */
 .product-image {
   background-color: #e8effc;
-  width: 255px;
-  height: 280px;
+  
   
 }
 
@@ -115,7 +119,7 @@ img {
 /* Product description  */
 
 .product-info {
-  width: 255px;
+ 
   background-color: #323232;
 }
 
@@ -148,12 +152,10 @@ img {
 }
 
 /* Hovering effect */
-.product-block:hover .product-info h3 {
-  background: #1abc9c;
-}
 
-.product-block:hover .product-info p {
-  background: rgba(26, 188, 156, 0.4);
+
+.product-block:hover .product-info {
+  background: #1abc9c;
 }
 
 /* Blog Section */
@@ -225,7 +227,7 @@ img {
   text-align: center;
   
 }
-.blog-btn a{
+.blog-post a{
   text-decoration: none;
   color: white;
 }
