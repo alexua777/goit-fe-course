@@ -269,11 +269,11 @@
 
 .footer {
   border-top: 1px solid #e7e7e7;
-
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
+  align-items: center;
 }
 
 .copyright {
