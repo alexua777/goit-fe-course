@@ -108,6 +108,39 @@
  
 }
 
+
+.service-item::before{
+    width: 32px;
+    height: 32px;
+    content: "";
+    display: block;
+ 
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    margin-right: 28px;
+    padding: 0 10px 10px 10px;
+    
+}
+.photography::before{
+    background-image: url("../img/icons/photography.png");
+}
+.web-design::before{
+    background-image: url("../img/icons/web-design.png");
+}
+.creativity::before{
+    background-image: url("../img/icons/creativity.png");
+}
+.seo::before{
+    background-image: url("../img/icons/seo.png");
+}
+
+.css-html::before{
+    background-image: url("../img/icons/css-html.png");
+}
+.digital::before{
+    background-image: url("../img/icons/digital-marketing.png");
+}
+
 .services {
   padding: 0 10px;
 }
@@ -118,9 +151,10 @@
 }
 .service-item {
   display: flex;
-  width: 380px;
+  flex-basis: 380px;
   margin-bottom: 100px;
   padding-right: 40px;
+  
 }
 .service-item img {
   margin-right: 28px;
