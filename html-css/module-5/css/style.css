@@ -233,12 +233,10 @@ main {
   text-align: center;
 }
 
-.product-card:hover .product-info h3 {
+.product-card:hover .product-info {
   background-color: rgb(26, 188, 156);
 }
-.product-card:hover .product-info p {
-  background-color: rgba(26, 188, 156, 0.4);
-}
+
 
 /* Overlay */
 
