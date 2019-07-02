@@ -105,40 +105,37 @@
   background-color: #f38181;
   display: block;
   margin: 24px auto 66px;
- 
 }
 
+.service-item::before {
+  width: 32px;
+  height: 32px;
+  content: "";
+  display: block;
 
-.service-item::before{
-    width: 32px;
-    height: 32px;
-    content: "";
-    display: block;
- 
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    margin-right: 28px;
-    padding: 0 10px 10px 10px;
-    
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-right: 28px;
+  padding: 0 10px 10px 10px;
 }
-.photography::before{
-    background-image: url("../img/icons/photography.png");
+.photography::before {
+  background-image: url("../img/icons/photography.png");
 }
-.web-design::before{
-    background-image: url("../img/icons/web-design.png");
+.web-design::before {
+  background-image: url("../img/icons/web-design.png");
 }
-.creativity::before{
-    background-image: url("../img/icons/creativity.png");
+.creativity::before {
+  background-image: url("../img/icons/creativity.png");
 }
-.seo::before{
-    background-image: url("../img/icons/seo.png");
+.seo::before {
+  background-image: url("../img/icons/seo.png");
 }
 
-.css-html::before{
-    background-image: url("../img/icons/css-html.png");
+.css-html::before {
+  background-image: url("../img/icons/css-html.png");
 }
-.digital::before{
-    background-image: url("../img/icons/digital-marketing.png");
+.digital::before {
+  background-image: url("../img/icons/digital-marketing.png");
 }
 
 .services {
@@ -154,7 +151,6 @@
   flex-basis: 380px;
   margin-bottom: 100px;
   padding-right: 40px;
-  
 }
 .service-item img {
   margin-right: 28px;
