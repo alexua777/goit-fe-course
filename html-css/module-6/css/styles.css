@@ -104,9 +104,8 @@
   height: 3px;
   background-color: #f38181;
   display: block;
-  margin: 0 auto;
-  margin-top: 24px;
-  margin-bottom: 66px;
+  margin: 24px auto 66px;
+ 
 }
 
 .services {
