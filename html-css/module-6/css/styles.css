@@ -272,7 +272,7 @@
   border: 1px solid #e98a89;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: content;
+  
   transition: background-color 0.2s linear;
 }
 
