@@ -162,6 +162,7 @@
   color: #bbbbbb;
   font-family: "Montserrat Bold";
   font-weight: 700;
+  resize: none;
 }
 
 .contact-form-message textarea::placeholder {
@@ -183,12 +184,12 @@
 }
 
 .contact-form input:valid, textarea:valid{
-    outline: 1px solid green;
-}
-.contact-form input:invalid, textarea:invalid{
-    outline: 1px solid red;
+  outline: 1px solid green;
 }
 
+.contact-form input:invalid:focus, textarea:invalid:focus{
+    outline: 1px solid red;
+}
 
 .contact-form-details input:not(:last-child) {
   margin-bottom: 26px;
@@ -211,6 +212,4 @@
   border: none;
   border-radius: 3px;
 }
-.test {
-  display: flex;
-}
+
