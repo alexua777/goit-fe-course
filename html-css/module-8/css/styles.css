@@ -18,7 +18,7 @@ img {
 /* Seeting up the main page container width */
 .page-container {
   max-width: 767px;
-  min-width: 250px;
+  min-width: 322px;
   margin: 0 auto;
 }
 
@@ -92,7 +92,8 @@ img {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .banner-heading {
-  padding: 0 20px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 .banner-heading h2 {
   font-size: 3rem;
@@ -246,9 +247,9 @@ img {
   .banner-heading {
     padding: 0;
   }
-  .title-container {
-    width: 69.27%;
-    margin: 0 auto;
+  .banner-heading {
+    max-width: 532px;
+    
   }
 
   .banner-heading h2 {
