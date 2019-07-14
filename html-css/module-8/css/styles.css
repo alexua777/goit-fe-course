@@ -17,7 +17,8 @@ img {
 }
 /* Seeting up the main page container width */
 .page-container {
-  width: 322px;
+  max-width: 767px;
+  min-width: 250px;
   margin: 0 auto;
 }
 
@@ -216,7 +217,7 @@ img {
 /* 768px and more */
 @media (min-width: 768px) {
   .page-container {
-    width: 768px;
+    max-width: 1439px;
     min-height: 700px;
   }
   .banner {
@@ -293,7 +294,7 @@ img {
 /* 1440px and more */
 @media (min-width: 1440px) {
   .page-container {
-    width: 1440px;
+    max-width: 1440px;
   }
   .banner {
     min-height: 700px;
