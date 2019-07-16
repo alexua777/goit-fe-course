@@ -1,10 +1,21 @@
 @import "../css/fonts.css";
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
 }
 
 :root {
@@ -18,7 +29,6 @@ img {
 }
 /* Seeting up the main page container width */
 .page-container {
-  
   min-width: 322px;
   margin: 0 auto;
 }
@@ -27,6 +37,7 @@ img {
 .page-header {
   padding: 20px 60px 0 60px;
   margin-bottom: 15px;
+  
 }
 
 .page-nav {
@@ -41,6 +52,7 @@ img {
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
+  text-decoration: none;
 }
 .logo-desktop {
   display: none;
@@ -219,7 +231,6 @@ img {
 /* 768px and more */
 @media (min-width: 768px) {
   .page-container {
-    max-width: 1439px;
     min-height: 700px;
   }
   .banner {
@@ -250,7 +261,6 @@ img {
   }
   .banner-heading {
     max-width: 532px;
-    
   }
 
   .banner-heading h2 {
@@ -280,6 +290,7 @@ img {
   .partner-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .partner-list-item {
     flex-basis: 44.36%;
@@ -295,14 +306,11 @@ img {
 }
 /* 1440px and more */
 @media (min-width: 1440px) {
-  .page-container {
-    max-width: 1440px;
-  }
   .banner {
     min-height: 700px;
   }
   .page-header {
-    width: 65.28%;
+    max-width: 940px;
     margin: 0 auto 159px;
   }
   .title-container {
@@ -312,6 +320,7 @@ img {
   .partner-container {
     width: 65.28%;
   }
+
   .partner-list-item {
     flex-basis: 220px;
     padding: 0 13px;
