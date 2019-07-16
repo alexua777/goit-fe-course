@@ -64,7 +64,8 @@ img {
   margin-bottom: 115px;
 }
 .nav-btn {
-  border: none;
+  border: 2px solid transparent;
+  border-radius: 18px;
   font-family: "Montserrat Bold";
   font-size: 1.4rem;
   color: #ffffff;
@@ -77,23 +78,10 @@ img {
 .nav-btn:not(:last-child) {
   margin-right: 7px;
 }
-/* Pseudo element is used to avoid the shifting effect when hovering */
-.nav-btn::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: 18px;
-  border: 2px solid #ffffff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  transition: 0.1s visibility linear;
-}
 
-.nav-btn:hover::before {
-  visibility: visible;
+
+.nav-btn:hover {
+  border: 2px solid #ffffff;
 }
 /* Styling banner */
 .banner {
