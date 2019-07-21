@@ -53,10 +53,12 @@ img {
   margin-bottom: 40px;
   text-decoration: none;
 }
-.mob-logo{
-  text-align: center;
+.logo{
+  display: block;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
+
 .logo-desktop {
   display: none;
 }
@@ -102,8 +104,10 @@ img {
   max-width: 280px;
   margin: 0 auto;
 }
-.banner-heading h3 {
-  font-size: 3rem;
+
+
+.banner-heading h2 {
+  font-size: 2.8rem;
   color: #ffffff;
   font-family: "Montserrat Bold";
   font-weight: 700;
@@ -118,7 +122,7 @@ img {
   font-family: "Roboto";
   font-weight: 300;
   text-align: center;
-  padding: 0 50px 0 50px;
+  /* padding: 0 50px 0 50px; */
   margin-bottom: 20px;
 }
 .btn-link {
