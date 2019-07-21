@@ -53,6 +53,10 @@ img {
   margin-bottom: 40px;
   text-decoration: none;
 }
+.mob-logo{
+  text-align: center;
+  margin-bottom: 40px;
+}
 .logo-desktop {
   display: none;
 }
