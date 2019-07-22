@@ -1,0 +1,339 @@
+@import "../css/fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+:root {
+  font-size: 62.8%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Seeting up the main page container width */
+.page-container {
+  min-width: 322px;
+  margin: 0 auto;
+}
+
+/* Page header */
+.page-header {
+  padding: 20px 0;
+  margin-bottom: 115px;
+}
+
+.page-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.logo,
+.logo-desktop {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.logo-desktop {
+  display: none;
+}
+/* styling menu */
+
+.nav-btn {
+  border: 2px solid transparent;
+  border-radius: 18px;
+  font-family: "Montserrat Bold";
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  position: relative;
+}
+.btn-container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.nav-btn:not(:last-child) {
+  margin-right: 7px;
+}
+
+.nav-btn:hover {
+  border: 2px solid #ffffff;
+}
+/* Styling banner */
+.banner {
+  background-image: url("../img/banner-322.png");
+  min-height: 542px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.banner-heading {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.banner-heading h2 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.banner-heading p {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+.btn-link {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  padding: 14px 0 14px 0;
+  text-align: center;
+}
+/* Styling partner section */
+.partner-section {
+  padding: 70px 15px 0 15px;
+  margin: 0 auto;
+}
+.section-heading {
+  font-size: 2.2rem;
+  color: #333333;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+  text-align: center;
+}
+.partner-section h3 {
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.partner-image img {
+  border-radius: 50%;
+}
+.partner-list-item {
+  margin-bottom: 30px;
+}
+.partner-list-item:last-child {
+  margin-bottom: 30px;
+}
+.partner-image {
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* adding icons */
+.partner-image::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 4px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Loading backgrounds for individual icons */
+.tv-icon::after {
+  background-color: #ff4e50;
+  background-image: url("../img/icons/tv.png");
+}
+.glass-icon::after {
+  background-color: #ffa507;
+  background-image: url("../img/icons/glass.png");
+}
+
+.cup-icon::after {
+  background-color: #1cd7ad;
+  background-image: url("../img/icons/cup.png");
+}
+.telegram-icon::after {
+  background-color: #4e73db;
+  background-image: url("../img/icons/telegram.png");
+}
+/* styling partner description */
+.partner-name {
+  font-size: 1.4rem;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.partner-bio {
+  font-size: 1.4rem;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+}
+
+.partner-btn {
+  background-color: #fff;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  border-radius: 30px;
+  margin-bottom: 56px;
+}
+@media (max-width: 767px) {
+  .section-heading-mb {
+    margin-bottom: 20px;
+  }
+}
+/* MEDIA styling */
+/* 768px and more */
+@media (min-width: 768px) {
+  .page-container {
+    min-height: 700px;
+  }
+  .banner {
+    background-image: url("../img/Banner-desktop.png");
+  }
+  .logo {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+
+  .menu {
+    margin-bottom: 0px;
+  }
+  .page-header {
+    margin-bottom: 159px;
+    padding-top: 30px;
+  }
+  .banner-heading {
+    padding: 0;
+  }
+  .banner-heading {
+    max-width: 532px;
+  }
+
+  .banner-heading h2 {
+    font-size: 52px;
+    margin-bottom: 37px;
+  }
+  .banner-heading p {
+    font-size: 24px;
+    margin-bottom: 39px;
+  }
+  .banner {
+    margin-bottom: 75px;
+  }
+  .btn-link {
+    width: 225px;
+    margin: 0 auto;
+  }
+  .section-heading-mb {
+    margin-bottom: 30px;
+  }
+
+  .partner-section {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .partner-list-item {
+    /* flex-basis: 44.36%;
+    padding: 0 23px; */
+    margin-bottom: 60px;
+  }
+  .partner-list-item:not(:nth-child(even)) {
+    margin-right: 20px;
+  }
+  .partner-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+}
+/* 960px and more */
+@media (min-width: 960px) {
+  /* .page-container{
+    max-width: 940px;
+  } */
+  .banner {
+    min-height: 700px;
+  }
+  .page-header {
+    max-width: 940px;
+    margin: 0 auto 159px;
+  }
+  .title-container {
+    width: 100%;
+    padding: 0;
+  }
+  .partner-container {
+    width: 940px;
+  }
+
+  /* .partner-list-item {
+    flex-basis: 220px;
+    padding: 0 10px;
+  } */
+  .section-heading-mb {
+    margin-bottom: 35px;
+  }
+  .partner-section {
+    padding: 0 0 72px 0;
+  }
+  .partner-list-item:nth-last-child(-n + 4) {
+    margin-bottom: 40px;
+  }
+  .partner-list-item:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+}
