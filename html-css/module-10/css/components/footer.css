@@ -1,10 +1,16 @@
 .footer {
     border-top: 1px solid #e7e7e7;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   
   .footer__copyright {
@@ -21,6 +27,8 @@
   }
   
   form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   [type="button"] {
@@ -41,6 +49,46 @@
     line-height: 24px;
     color: var(--par-font-color);
     font-family: var(--par-font);
+    font-style: italic;
+    padding-left: 5px;
+  }
+  
+  input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: var(--par-font);
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 5px;
+  }
+  
+  input::-moz-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: var(--par-font);
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 5px;
+  }
+  
+  input:-ms-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: var(--par-font);
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 5px;
+  }
+  
+  input::-ms-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: var(--par-font);
+    font-weight: 300;
     font-style: italic;
     padding-left: 5px;
   }
