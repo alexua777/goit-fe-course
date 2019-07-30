@@ -1,0 +1,7 @@
+@import './fonts.css';
+@import './vars.css';
+@import './libs/utilis.css';
+@import './components/header-banner.css';
+@import './components/services.css';
+@import './components/team.css';
+@import './components/footer.css';

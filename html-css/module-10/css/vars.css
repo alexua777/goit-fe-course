@@ -1,0 +1,11 @@
+:root {
+    --main-font:'Montserrat Regular', serif, sans-serif;
+    --main-font-bold: 'Montserrat Bold', serif, sans-serif;
+    --italic-title-font: 'Kaushan Regular', serif, sans-serif;
+    --par-font: 'Roboto Regular',serif, sans-serif;
+    --main-font-color: #333333;
+    --sub-font-color:#333333;
+    --par-font-color: #999999;
+
+    font-size: 62.5%;
+}
