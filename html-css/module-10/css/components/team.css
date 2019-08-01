@@ -120,7 +120,6 @@
     font-size: 1.5rem;
     line-height: 24px;
     color: var(--par-font-color);
-    font-family: var(--par-font);
-    font-style: italic;
+    font-family: var(--par-font-italic);
     text-align: center;
   }
