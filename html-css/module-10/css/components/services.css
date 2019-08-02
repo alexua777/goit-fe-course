@@ -11,13 +11,19 @@
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 100px;
-  }
+      }
   
-  .service-item svg {
-    display: block;
-    width: 32px;
-    height: 32px;
+  .service-item-icon {
+    width: 35px;
+    height: 35px;
     margin-right: 35px;
+  }   
+  .service-item-icon svg {
+    display: block;
+    width: 35px;
+    height: 35px;
+    
+    
   }
   
   .service-heading__title {

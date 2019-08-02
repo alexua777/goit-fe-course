@@ -1,5 +1,5 @@
-.page-header {
-  min-height: 1000px;
+.hero-wrapper {
+  height: 100vh;
   background-image: -webkit-gradient(
       linear,
       left bottom,
@@ -154,7 +154,7 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .page-header {
+  .hero-wrapper {
     background-image: -webkit-gradient(
       linear,
       left bottom,
