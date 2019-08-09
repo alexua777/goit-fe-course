@@ -1,0 +1,24 @@
+.navigation-icons {
+  display: flex;
+}
+
+.navigation-icon__link {
+  width: 18px;
+  height: 15px;
+  display: block;
+}
+
+.navigation-icons__list svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+}
+
+.navigation-icon__link:hover svg {
+  fill: #fce38a;
+}
+
+.navigation-icons__list:not(:last-child) {
+  margin-right: 40px;
+}

@@ -1,0 +1,23 @@
+.hero-wrapper {
+  min-height: 768px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(240, 226, 144, 0.7) 0%,
+      rgba(233, 138, 137, 0.7) 100%
+    ),
+    url('/build/images/banner-img-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-wrapper {
+      background-image: linear-gradient(
+          0deg,
+          rgba(240, 226, 144, 0.7) 0%,
+          rgba(233, 138, 137, 0.7) 100%
+        ),
+        url('/build/images/banner@2X-min.png');
+    }
+  }
+}

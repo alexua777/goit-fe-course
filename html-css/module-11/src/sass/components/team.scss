@@ -1,0 +1,66 @@
+.team-card {
+  margin-bottom: 80px;
+}
+
+.team {
+  display: flex;
+}
+
+.team-card {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__name {
+    font-size: 1.4rem;
+    font-family: $main-font;
+    color: $main-font-color;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  &__role {
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: $par-font-color;
+    font-family: $par-font-italic;
+    text-align: center;
+  }
+}
+
+.card-image {
+  transition: box-shaddow 0.2s linear;
+  transition: transform 0.2s linear, box-shaddow 0.2s linear;
+  position: relative;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px 1px rgba(149, 225, 211, 1);
+  }
+
+  &:hover .overlay {
+    display: block;
+  }
+}
+
+.overlay {
+  position: absolute;
+
+  /* background-image: linear-gradient(0deg, #f0e290 0%, #e98a89 100%); */
+
+  background-image: linear-gradient(
+    0deg,
+    rgba(240, 226, 144, 0.7) 0%,
+    rgba(233, 138, 137, 0.7) 100%
+  );
+
+  /* opacity: 0.7; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+

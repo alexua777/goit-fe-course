@@ -1,0 +1,41 @@
+.hero {
+  margin: 0 auto;
+  color: $main-slider-color;
+  text-align: center;
+  width: 825px;
+}
+
+.hero__sub {
+  font-family: $italic-title-font;
+}
+
+.hero__heading {
+  font-family: $main-font-bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__sub--banner {
+  font-size: 7.2rem;
+  margin-bottom: 4.5rem;
+  color: $main-slider-color;
+}
+
+.hero__heading--banner {
+  font-size: 15rem;
+  line-height: 140px;
+  margin-bottom: 60px;
+  color: $main-slider-color;
+  text-align: center;
+}
+
+.hero__btn {
+  font-size: 1.4rem;
+  font-family: $main-font-bold;
+  color: $main-slider-color;
+  background-color: transparent;
+  border: 3px solid $main-slider-color;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-bottom: 230px;
+}
