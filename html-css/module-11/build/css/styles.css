@@ -863,6 +863,6 @@ input::placeholder {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-wrapper .hero-wrapper {
-    background-image: linear-gradient(0deg, rgba(240, 226, 144, 0.7) 0%, rgba(233, 138, 137, 0.7) 100%), url("/build/images/banner@2X-min.png");
+    background-image: linear-gradient(0deg, rgba(240, 226, 144, 0.7) 0%, rgba(233, 138, 137, 0.7) 100%), url("../images/banner@2X-min.png");
   }
 }
