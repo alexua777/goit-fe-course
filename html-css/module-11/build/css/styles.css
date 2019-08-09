@@ -456,7 +456,7 @@ img {
 
 .hero-wrapper {
   min-height: 768px;
-  background-image: linear-gradient(0deg, rgba(240, 226, 144, 0.7) 0%, rgba(233, 138, 137, 0.7) 100%), url("/src/images/banner-img-min.png");
+  background-image: linear-gradient(0deg, rgba(240, 226, 144, 0.7) 0%, rgba(233, 138, 137, 0.7) 100%), url("../images/banner-img-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
