@@ -1,13 +1,17 @@
 let input;
 let total = 0;
-let inputInt;
+let inputNum;
 
-do {
+while (input !== null) {
   input = prompt('Please enter your number');
-  inputInt = parseInt(input);
-  console.log(inputInt);
-  total += inputInt;
+
+  inputNum = Number(input);
+  console.log(input);
+  total += inputNum;
   console.log(total);
-} while (input !== null);
+  if (input == null) {
+    break;
+  }
+}
 
 alert(`Total sum is ${total}`);
