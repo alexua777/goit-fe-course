@@ -9,6 +9,7 @@ while (input !== null) {
   console.log(input);
   total += inputNum;
   console.log(total);
+
   if (input == null) {
     break;
   }
