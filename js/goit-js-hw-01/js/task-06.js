@@ -4,15 +4,16 @@ let inputNum;
 
 while (input !== null) {
   input = prompt('Please enter your number');
+  if (input == null || input == '') {
 
+    break;
+  }
   inputNum = Number(input);
   console.log(input);
   total += inputNum;
   console.log(total);
 
-  if (input == null) {
-    break;
-  }
+
 }
 
 alert(`Total sum is ${total}`);
