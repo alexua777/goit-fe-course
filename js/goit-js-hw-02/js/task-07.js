@@ -13,7 +13,7 @@ const isLoginUnique = function (allLogins, login) {
 };
 
 const addLogin = function (allLogins, login) {
-  if (isLoginValid(login) == false) {
+  if (!isLoginValid(login)) {
     console.log(LENGTHERROR);
   }
   if (isLoginUnique(logins, login)) {
