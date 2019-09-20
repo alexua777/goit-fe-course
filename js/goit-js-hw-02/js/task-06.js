@@ -12,12 +12,12 @@ const numbersTotal = function () {
       break;
     }
   }
-  const numberInt = [];
+  // const numberInt = [];
   for (let i = 0; i < number.length; i++) {
-    numberInt.push(Number(number[i]));
-    total += numberInt[i];
+    number[i] = Number(number[i]);
+    total += number[i];
   }
-  if (numberInt.length > 0) {
+  if (number.length > 0) {
     return total;
   }
   return 'Array is empty';

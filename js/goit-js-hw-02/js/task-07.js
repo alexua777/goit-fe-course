@@ -19,7 +19,7 @@ const addLogin = function (allLogins, login) {
   if (isLoginUnique(logins, login)) {
     console.log(LOGINERROR);
   }
-  if (isLoginValid(login) && isLoginUnique(logins, login) == false) {
+  if (isLoginValid(login) && !isLoginUnique(logins, login)) {
     logins.push(login);
     console.log(SUCCESS);
   }
