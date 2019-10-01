@@ -15,7 +15,7 @@ if (userPassword === null) {
   message = CANCEL;
 }
 
-if (userPassword !== MYPASSWORD && userPassword !== null) {
+else {
   message = DENIED;
 }
 

@@ -23,9 +23,7 @@ while (credits > 0) {
   if (droidsNum < 0 || droidsNum === 0) {
     console.log('Incorrect entered ammount');
     break;
-  }
-
-  if (totalPrice > credits) {
+  } else {
     console.log(OVER_LIMIT);
     break;
   }

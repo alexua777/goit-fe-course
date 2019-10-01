@@ -8,9 +8,7 @@ if (orderedNumm <= total && ordered !== null && orderedNumm > 0) {
 }
 if (orderedNumm < 0 || orderedNumm === 0) {
   alert('You entered incorrect number');
-}
-
-if (orderedNumm > total && ordered !== null) {
+} else {
   alert('The requested amount is higher than stock');
 }
 console.log(orderedNumm);
