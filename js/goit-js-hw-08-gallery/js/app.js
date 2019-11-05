@@ -7,7 +7,7 @@ const refs = {
   modal: document.querySelector('div[class="lightbox js-lightbox"]'),
   lightbox: document.querySelector('img[class="lightbox__image"]'),
   close: document.querySelector('button[data-action="close-lightbox"]'),
-  overlay: document.querySelector('div[class="lightbox__content]'),
+  overlay: document.querySelector('div[class="lightbox__content"]'),
 };
 
 function createGallery(arr) {
