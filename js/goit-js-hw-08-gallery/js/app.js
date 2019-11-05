@@ -7,7 +7,7 @@ const refs = {
   modal: document.querySelector('div[class="lightbox js-lightbox"]'),
   lightbox: document.querySelector('img[class="lightbox__image"]'),
   close: document.querySelector('button[data-action="close-lightbox"]'),
-  overlay: document.querySelector('div[class="lightbox__overlay"]'),
+  overlay: document.querySelector('div[class="lightbox__content"]'),
 };
 
 function createGallery(arr) {
@@ -42,13 +42,15 @@ function createGalleryItem({ original, preview, description }) {
 
 function openModal(e) {
   e.preventDefault();
-  console.log(e.target);
-  console.log(e.currentTarget);
+
   if (e.target === e.currentTarget) return;
   refs.modal.classList.add('is-open');
   window.addEventListener('keydown', keypressHandler);
 
   refs.lightbox.src = e.target.dataset.source;
+
+  // Checking and assigning current index for slider image
+
   gallery.map((elem) => {
     if (elem.original === e.target.dataset.source) {
       current = gallery.indexOf(elem);
@@ -73,8 +75,8 @@ function overlayHandler(e) {
   closeModal();
 }
 
-function keypressHandler(e) {
 
+function keypressHandler(e) {
   if (e.key === 'Escape') {
     closeModal();
   }
