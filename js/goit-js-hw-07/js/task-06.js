@@ -9,5 +9,8 @@ function inputHandler(event) {
   if (resultValue === Number(input.getAttribute('data-length'))) {
     input.classList.remove('invalid');
     input.classList.add('valid');
-  } else input.classList.add('invalid');
+  } else {
+    input.classList.remove('valid');
+    input.classList.add('invalid');
+  }
 }
