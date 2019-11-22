@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://alexua777.github.io/goit-fe-course/webpack",
+  "homepage": "https://alexua777.github.io/goit-fe-course/js/webpack",
   "keywords": [],
   "author": "",
   "license": "ISC",
