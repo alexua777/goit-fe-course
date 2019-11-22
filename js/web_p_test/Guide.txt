@@ -1,0 +1,163 @@
+1. npm init -y
+2. npm install webpack webpack-cli --save-dev
+3. In package.json create extra script:
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode=development"
+  },
+4. Create file webpack.config.js
+5. Adding entry point:
+module.exports = {
+  entry: './src/index.js',
+};
+
+6. adding output point:
+output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+
+  7. Adding loaders (JS files):
+
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader',
+      },
+
+8. installing js loader (babel) : https://babeljs.io/setup#installation
+
+npm install --save-dev babel-loader @babel/core
+
+https://github.com/babel/babel-loader
+
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+
+9 Create .babelrc configuration file:
+{
+  "presets": ["@babel/preset-env"]
+}
+
+10. Improting css
+in index.js use import './styles.css';
+
+11. installing style loader:
+
+https://github.com/webpack-contrib/style-loader
+
+npm install --save-dev style-loader
+
+https://github.com/webpack-contrib/css-loader
+
+npm install --save-dev css-loader
+
+Adding rules in webpack.config.js:
+ 
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+12. Adding WebpackPlugin:
+
+https://github.com/jantimon/html-webpack-plugin#options
+
+npm i --save-dev html-webpack-plugin
+
+13. In webpack.config.js adding 
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+In module.exports add :
+plugins: [
+    new HtmlWebpackPlugin()
+  ]
+
+14. Installing clean web pack plugin 
+
+https://github.com/johnagan/clean-webpack-plugin
+
+npm install --save-dev clean-webpack-plugin
+
+15. in webpack.config.js add:
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+16. add new instance to plugins in module.exports:
+
+new CleanWebpackPlugin();
+
+17. Install postcss loader
+
+npm install postcss-loader --save-dev
+npm i -D autoprefixer
+
+18. create postcss.config.js in main __dir
+
+module.exports = {
+    plugins: [
+      require('autoprefixer')
+    ]
+}
+
+
+https://tproger.ru/translations/configure-webpack4/
+
+18. add postcss loader 'postcss-loader' in webpack.config.js
+
+19. Dev server config
+https://webpack.js.org/guides/development/#using-webpack-dev-server
+https://github.com/webpack/webpack-dev-server
+
+npm install webpack-dev-server --save-dev
+
+adding in webpack.config.js property:
+devServer: {
+       contentBase: './dist',
+     },
+
+20. package.json 
+scripts update:
+
+  "start": "webpack-dev-server --open",
+
+  21. Prod server
+  scripts: {
+      build: "webpack --mode=production"
+  }
+
+  npm run build
+
+  22. extract css file plugin 
+  https://github.com/webpack-contrib/mini-css-extract-plugin
+
+  npm install --save-dev mini-css-extract-plugin
+
+  add following string into webpack.config.js
+  const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+  add into plugins :
+
+    new MiniCssExtractPlugin({
+      filename: 'styless.css',
+     }),
+
+in css  rulles add 
+
+MiniCssExtractPlugin.loader before css-loader
+
+  
+
+  23. devtools in plugins 
+  devtool :'cheap-eval-source-map'
+
+24. Production / dev
+https://github.com/goitacademy/notepad-boilerplate
+
+
+
+
+
+
+
+
