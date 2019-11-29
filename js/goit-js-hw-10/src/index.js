@@ -17,22 +17,19 @@ buildMenu(cards);
 
 function buildMenu(cards) {
   const markup = cards.map((card) => menuCardItem(card)).join('');
-  console.log(markup);
   refs.menu.insertAdjacentHTML('beforeend', markup);
 }
 
 refs.switch.addEventListener('change', changeTheme);
 
 // Loading Theme from localStorage
-
-let currentTheme = localStorage.getItem('theme');
+const defaultTheme = Theme.LIGHT;
+let currentTheme;
 
 function loadStoredTheme() {
-  if (currentTheme) {
+  currentTheme = localStorage.getItem('theme');
+  if (currentTheme && currentTheme !== defaultTheme) {
     refs.body.classList.add(currentTheme);
-  }
-
-  if (currentTheme === Theme.DARK) {
     refs.switch.setAttribute('checked', true);
   }
 }
@@ -42,7 +39,7 @@ loadStoredTheme();
 // Switching Theme
 
 function changeTheme() {
-  if (currentTheme === Theme.LIGHT || currentTheme === undefined) {
+  if (currentTheme === Theme.LIGHT || currentTheme === null) {
     refs.body.classList.add(Theme.DARK);
     refs.body.classList.remove(Theme.LIGHT);
     localStorage.setItem('theme', Theme.DARK);
