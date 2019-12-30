@@ -9,7 +9,7 @@ export default function fetchCountries(searchQuery) {
     .then((response) => response.json())
     .then((data) => {
       const markup = data
-        .filter((country) => country.name.includes(searchQuery))
+        .filter((country) => country.name.toLowerCase().includes(searchQuery))
         .map((country) => countryOnly(country));
 
 
@@ -23,10 +23,11 @@ export default function fetchCountries(searchQuery) {
         refs.docBody.innerHTML = '';
         return;
       }
+
       if (markup.length === 1) {
         refs.docBody.innerHTML = '';
         const newMarkup = data
-          .filter((country) => country.name.includes(searchQuery))
+          .filter((country) => country.name.toLowerCase().includes(searchQuery))
           .map((country) => countryList(country));
         refs.docBody.insertAdjacentHTML('beforeend', newMarkup);
         return;
