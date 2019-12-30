@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const debounce = require('lodash.debounce');
+const ghpages = require('gh-pages');
 
 const modeConfig = (env) => require(`./build-utils/${env.mode}.config`)(env);
 
@@ -46,6 +47,3 @@ module.exports = (env) => webpackMerge({
   },
   plugins: [new CleanWebpackPlugin(), new FriendlyErrorsWebpackPlugin(), new WebpackBar()],
 }, modeConfig(env));
-
-
-

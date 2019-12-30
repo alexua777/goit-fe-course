@@ -5,7 +5,7 @@ import fetchCountries from './fetchCountries';
 import { refs } from './refs';
 
 
-refs.input.addEventListener('input', inputHandler);
+refs.input.addEventListener('input', debounce(inputHandler, 500));
 
 let inputResult;
 
