@@ -23,6 +23,16 @@ export default function fetchCountries(searchQuery) {
         refs.docBody.innerHTML = '';
         return;
       }
+      if (markup.length === 0) {
+        PNotify.alert({
+          text: 'Sorry, there is no such country',
+          type: 'notice',
+
+
+        });
+        refs.docBody.innerHTML = '';
+        return;
+      }
 
       if (markup.length === 1) {
         refs.docBody.innerHTML = '';

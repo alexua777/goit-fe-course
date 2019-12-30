@@ -12,3 +12,4 @@ function inputHandler(event) {
 }
 
 refs.input.addEventListener('input', inputHandler);
+// refs.input.addEventListener('input', debounce(inputHandler, 2000));
