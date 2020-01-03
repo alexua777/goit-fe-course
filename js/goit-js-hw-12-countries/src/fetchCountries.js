@@ -28,7 +28,6 @@ export default function fetchCountries(searchQuery) {
           text: 'Sorry, there is no such country',
           type: 'notice',
 
-
         });
         refs.docBody.innerHTML = '';
         return;
